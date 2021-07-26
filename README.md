@@ -47,3 +47,5 @@ c10="${bgwhite}"
 c11="${zgreen1}"
 c12="${zgray}"
 c13="${zblue}"
+## please read
+place the ftch directory in your home folder!
