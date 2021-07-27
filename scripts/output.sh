@@ -3,10 +3,13 @@ echo -e "   "
 echo -e "   "
 #
 # add a '#' before the next line to to disable printing of your operating system
-echo -e "           ${c1}os${c3}    ${distro} $(uname -m)"
+echo -e "           ${c1}os${c3}    ${distro} "
 #
 # add a '#' before the next line to to disable printing of the version of the kernel your're running
 echo -e "           ${c2}ker${c3}   $(uname -r)"
+#
+# add a '#' before the next line to to disable printing of the arcitecture of your processor
+echo -e "           ${7}arc${9}     $(uname -m)"
 #
 # add a '#' before the next line to to disable printing of the packages on your system
 echo -e "           ${c7}pkgs${c3}  $(net_pkg)"  
