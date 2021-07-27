@@ -30,7 +30,7 @@
 # btw I'm providing some ascii art for the distros i use so ..
 
 # Arch Linux!
-#source ~/ftch/.ascii/arch
+#source "${pwd}/ascii/arch"
 
 # manjaro-linux
-#source ~/ftch/.ascii/manjaro
+#source "${pwd}/ascii/manjaro"

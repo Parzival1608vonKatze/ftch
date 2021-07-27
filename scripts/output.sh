@@ -1,4 +1,4 @@
-source ~/ftch/scripts/batterie
+source ${pwd}/scripts/batterie.sh
 echo -e "   "
 echo -e "   "
 #
@@ -10,7 +10,7 @@ echo -e "           ${c2}ker${c3}   $(uname -r)"
 #
 # add a '#' before the next line to to disable printing of the packages on your system
 echo -e "           ${c7}pkgs${c3}  $(net_pkg)"  
-source ~/ftch/scripts/icons
+source "${pwd}/scripts/icons.sh"
 #
 # add a '#' before the next line to to disable printing of your shell
 echo -e "           ${c4}sh         $(basename "${SHELL}")"
@@ -29,4 +29,6 @@ echo -e "           ${c4}disk${c3}  $storageused Used"
 #
 # add a '#' before the next line to to disable printing of the batterie percentage
 echo -e "           ${c1}bat$BAT"
-
+echo -e " "
+echo -e " "
+echo -e " "
