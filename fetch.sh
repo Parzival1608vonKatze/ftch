@@ -3,9 +3,6 @@
 #get 'install' dir
  pwd=$(pwd)
 
-# get colors
-source "${pwd}/scripts/colors.sh"
-
 # get init system
 source "${pwd}/scripts/init.sh"
 
@@ -25,14 +22,19 @@ source "${pwd}/scripts/mem.sh"
 source "${pwd}/scripts/wm.sh"
 
 
+# get GTK theming
+source "${pwd}/scripts/gtk.sh"
+
+
 # fetch output
 distro_detect
+
 storage
 
-# echo logo
-source "${pwd}/scripts/ascii.sh"
+# get batterie
+source ${pwd}/scripts/batterie.sh
+
  # echo output 
  source "${pwd}/scripts/output.sh"
-
 
 #																			(END OF FILE)

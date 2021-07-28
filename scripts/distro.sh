@@ -8,7 +8,7 @@ distro_detect() {
 	   distro="Android"
 	   ;;
 	*)
-	   distro="$(source /etc/os-release && echo "${PRETTY_NAME}")"
+	   distro="$(source /etc/os-release && echo "${PRETTY_NAME}" | sed "s/Linux/ /g")"
 	   ;;
     esac
 }
