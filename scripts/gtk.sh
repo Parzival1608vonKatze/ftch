@@ -11,3 +11,5 @@ gtk_font=$(cat ~/.config/gtk-3.0/settings.ini | grep gtk-font-name= | sed "s/gtk
 
 #get gtk-cursor-theme
 gtk_cursor=$(cat ~/.config/gtk-3.0/settings.ini | grep gtk-cursor-theme-name= | sed "s/gtk-cursor-theme-name=/ /g")
+
+#																			(END OF FILE)

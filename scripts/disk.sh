@@ -5,3 +5,5 @@ storage() {
     storageused=$(df -h / | grep "/" | awk '{print $3}')
     storageavail=$(df -h / | grep "/" | awk '{print $2}')
 }
+
+#																			(END OF FILE)

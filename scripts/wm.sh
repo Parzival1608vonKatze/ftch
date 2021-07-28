@@ -32,3 +32,5 @@ elif [ -n "${XDG_SESSION_TYPE}" ]; then
 fi
 
 ui="$(basename "${ui}")"
+
+#																			(END OF FILE)

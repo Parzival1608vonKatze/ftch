@@ -34,7 +34,12 @@ storage
 # get batterie
 source ${pwd}/scripts/batterie.sh
 
+# get screen resolution
+get_res
+# (this feture is not fully implemented!)
+
+
  # echo output 
- source "${pwd}/scripts/output.sh"
+ source "${pwd}/output.sh"
 
 #																			(END OF FILE)

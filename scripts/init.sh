@@ -15,3 +15,5 @@ get_init() {
         echo "systemD"
     fi
 }
+
+#																			(END OF FILE)
