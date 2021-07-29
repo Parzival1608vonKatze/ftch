@@ -71,8 +71,8 @@ source "${pwd}/detect.sh"
 echo -e "   "
 echo -e "   "
 #  add a '#' before the next couple of lines to to disable printing of your user and hostname
-echo -e "             $(printenv USER)@$(cat /etc/hostname)"
-echo -e "           ${c5}----------------------"
+#echo -e "             $(printenv USER)@$(cat /etc/hostname)"
+#echo -e "           ${c5}----------------------"
 #
 # add a '#' before the next line to to disable printing of your operating system
 echo -e "           ${c1}os${c3}      ${distro} "
@@ -81,11 +81,12 @@ echo -e "           ${c1}os${c3}      ${distro} "
 echo -e "           ${c7}ker${c3}     $(uname -r)"
 #
 # add a '#' before the next line to to disable printing of the arcitecture of your processor
-echo -e "           ${c7}arc${c11}     $(uname -m)${c0}"
+#echo -e "           ${c7}arc${c11}     $(uname -m)${c0}"
 #
 # add a '#' before the next line to to disable printing of the packages on your system
-echo -e "           ${c2}pkgs${c3}    $(net_pkg)"  
-source "${pwd}/scripts/icons.sh" 
+echo -e "           ${c2}pkgs${c3}    $(net_pkg)"
+# add a '#' before the next line to to disable printing of a few icons
+# source "${pwd}/scripts/icons.sh" 
 #
 # add a '#' before the next line to to disable printing of your shell
 echo -e "           ${c4}sh      $(basename "${SHELL}")"
@@ -102,15 +103,16 @@ echo -e "           ${c5}wm${c3}      ${ui}"
 # add a '#' before the next couple of lines to to disable printing of your gkt themeing
 echo -e "           ${c6}gtk${c12}    ${gtk_theme}"
 #
-echo -e "           ${c4}icons  ${gtk_icons}${c0}"
+#echo -e "           ${c4}icons  ${gtk_icons}${c0}"
 #
 #echo -e "          ${c4}cursor ${gtk_cursor}"
 #
-echo -e "           ${c6}term ${c6}   $(printenv TERM)${c0}"
+#echo -e "           ${c6}term ${c6}   $(printenv TERM)${c0}"
 # add a '#' before the next line to to disable printing of the storage being used by '/'
 echo -e "           ${c4}disk${c3}    $storageused Used"
 #
-echo -e "           ${c7}res     $(echo "$X"x"$Y")"
+# add a '#' before the next line to to disable printing of your screen resolution
+# echo -e "           ${c7}res     $(echo "$X"x"$Y")"
 # add a '#' before the next line to to disable printing of the batterie percentage
 echo -e "           ${c1}bat$BAT"
 echo -e " "
