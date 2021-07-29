@@ -81,7 +81,7 @@ echo -e "           ${c1}os${c3}      ${distro} "
 echo -e "           ${c7}ker${c3}     $(uname -r)"
 #
 # add a '#' before the next line to to disable printing of the arcitecture of your processor
-echo -e "           ${c7}arc${c11}       $(uname -m)${c0}"
+echo -e "           ${c7}arc${c11}     $(uname -m)${c0}"
 #
 # add a '#' before the next line to to disable printing of the packages on your system
 echo -e "           ${c2}pkgs${c3}    $(net_pkg)"  
@@ -110,6 +110,7 @@ echo -e "           ${c6}term ${c6}   $(printenv TERM)${c0}"
 # add a '#' before the next line to to disable printing of the storage being used by '/'
 echo -e "           ${c4}disk${c3}    $storageused Used"
 #
+echo -e "           ${c7}res     $(echo "$X"x"$Y")"
 # add a '#' before the next line to to disable printing of the batterie percentage
 echo -e "           ${c1}bat$BAT"
 echo -e " "
