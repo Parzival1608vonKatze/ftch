@@ -38,6 +38,6 @@ source ${pwd}/scripts/batterie.sh
 source "${pwd}/scripts/res.sh"
 
  # echo output 
- source "${pwd}/output.sh"
+ source "${pwd}/output.cfg"
 
 #																			(END OF FILE)

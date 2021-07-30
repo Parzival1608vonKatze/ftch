@@ -1,22 +1,24 @@
-#    OS: Arch Linux x86_64
-# note $c4 is blue (by default) if you changed it's value you might have to replace it!
-echo -e "                                                               "
-echo -e "${c4}                            ██                            "
-echo -e "${c4}                           ████                           "
-echo -e "${c4}                          ██████                          "
-echo -e "${c4}                         ████████                         "
-echo -e "${c4}                        ██████████                        "
-echo -e "${c4}                       ████████████                       "
-echo -e "${c4}                      ██████████████                      "
-echo -e "${c4}                     ████████████████                     "
-echo -e "${c4}                    ██████████████████                    "
-echo -e "${c4}                   ████████████████████                   "
-echo -e "${c4}                  ██████████████████████                  "
-echo -e "${c4}                 ██████████     █████████                 "
-echo -e "${c4}                ██████████       █████████                "
-echo -e "${c4}               ██████████         █████████               "
-echo -e "${c4}              ███████████         ██████████              "
-echo -e "${c4}             ████████████         ███████████             "
-echo -e "${c4}            ████████                  ████████            "
-echo -e "${c4}           ████                            ████           "
-echo -e "${c4}          ██                                  ██          "
+        "Arch"
+                
+            
+                   -`
+                  .o+`
+                 `ooo/
+                `+oooo:
+               `+oooooo:
+               -+oooooo+:
+             `/:-:++oooo+:
+            `/++++/+++++++:
+           `/++++++++++++++:
+          `/+++ooooooooooooo/`
+         ./ooosssso++osssssso+`
+        .oossssso-````/ossssss+`
+       -osssssso.      :ssssssso.
+      :osssssss/        osssso+++.
+     /ossssssss/        +ssssooo/-
+   `/ossssso+/:-        -:/+osssso+-
+  `+sso+:-`                 `.-/+oso:
+ `++:.                           `-/+/
+ .`                                 `/
+
+        
