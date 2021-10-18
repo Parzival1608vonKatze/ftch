@@ -4,11 +4,8 @@ written in *bash*!
 * it's aiming to be a *simple non-bloated* alternative
 to neofetch
 
-*default configuration*
+*my config on Manjaro*
 ![default](https://github.com/Parzival1608vonKatze/ftch/blob/main/.git-repo/default.png)
-* with all fetures enabled it could look like this:
-![default](https://github.com/Parzival1608vonKatze/ftch/blob/main/.git-repo/full-fetured.png)
-
 
 
 # install 
