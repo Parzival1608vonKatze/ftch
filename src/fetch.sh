@@ -3,6 +3,15 @@
 #get 'install' dir
  pwd=$(pwd)
 
+
+# make (default) config file
+if [ -f ~/.config/ftch/config.ftch ]; then
+ cat /dev/null
+else
+mkdir ~/.config/ftch
+cat "${pwd}/defaults/output.cfg" > ~/.config/ftch/config.ftch
+fi
+
 # get init system
 source "${pwd}/scripts/init.sh"
 
@@ -38,6 +47,8 @@ source ${pwd}/scripts/batterie.sh
 source "${pwd}/scripts/res.sh"
 
  # echo output 
- source "${pwd}/output.cfg"
+ source ~/.config/ftch/config.ftch
+
+
 
 #																			(END OF FILE)
