@@ -36,8 +36,11 @@ source "${pwd}/scripts/gtk.sh"
 
 
 # fetch output
+
+#distro detect
 distro_detect
 
+#get used storage
 storage
 
 # get batterie
