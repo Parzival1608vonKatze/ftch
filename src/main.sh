@@ -1,18 +1,5 @@
 #!/bin/bash
 
-
-#get 'install' dir
- pwd=$(pwd)
-
-
-# make (default) config file
-if [ -f ~/.config/ftch/config.ftch ]; then
- cat /dev/null
-else
-mkdir ~/.config/ftch
-cat "${pwd}/defaults/output.cfg" > ~/.config/ftch/config.ftch
-fi
-
 # get init system
 get_init() {
     os="$(uname -o)"
@@ -57,10 +44,10 @@ net_pkg() {
       "emerge")
 	 total=$(qlist -I | wc -l)
 	 ;;
-#      "dpkg")
-#	 total=$(dpkg-query -l | wc -l)
-#	 ;;
-      "")
+	"dpkg")
+	total=$(dpkg-query -l | wc -l)
+	 ;;
+	"")
 	 total="Unknown"
 	 ;;
   esac
@@ -76,7 +63,8 @@ distro_detect() {
 	   distro="Android"
 	   ;;
 	*)
-	   distro="$(source /etc/os-release && echo "${PRETTY_NAME}" | sed "s/Linux//g" | sed "s/ //g" )"
+	   distro="$(source /etc/os-release && echo "${PRETTY_NAME}" | sed "s/Linux//g" | sed "s/ //g"
+)"
 	   ;;
     esac
 }
@@ -125,18 +113,18 @@ fi
 
 ui="$(basename "${ui}")"
 
-
+# GTK 
 # get GTK theming
-#gtk_theme=$(cat ~/.config/gtk-3.0/settings.ini | grep gtk-theme-name= | sed "s/gtk-theme-name=/ /g")
+gtk_theme=$(cat ~/.config/gtk-3.0/settings.ini | grep gtk-theme-name= | sed "s/gtk-theme-name=/ /g")
 
 # get gtk-icon-theme
-#gtk_icons=$(cat ~/.config/gtk-3.0/settings.ini | grep gtk-icon-theme-name= | sed "s/gtk-icon-theme-name=/ /g")
+gtk_icons=$(cat ~/.config/gtk-3.0/settings.ini | grep gtk-icon-theme-name= | sed "s/gtk-icon-theme-name=/ /g")
 
 # get gtk-font 
-#gtk_font=$(cat ~/.config/gtk-3.0/settings.ini | grep gtk-font-name= | sed "s/gtk-font-name=/ /g")
+gtk_font=$(cat ~/.config/gtk-3.0/settings.ini | grep gtk-font-name= | sed "s/gtk-font-name=/ /g")
 
 #get gtk-cursor-theme
-#gtk_cursor=$(cat ~/.config/gtk-3.0/settings.ini | grep gtk-cursor-theme-name= | sed "s/gtk-cursor-theme-name=/ /g")
+gtk_cursor=$(cat ~/.config/gtk-3.0/settings.ini | grep gtk-cursor-theme-name= | sed "s/gtk-cursor-theme-name=/ /g")
 
 # OUTPUT
 
@@ -148,7 +136,6 @@ storage
 
 # get battery
 BAT=$(upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep percentage | sed "s/percentage:          / /g")
-
 # get screen resolution
     #get horizontal resolution
     X=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f1)
@@ -158,6 +145,6 @@ BAT=$(upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep percentage |
     res=$(echo "$X"x"$Y")
     
  # echo output 
- source ~/.config/ftch/config.ftch
+ source $(pwd)/output.cfg
 
 
