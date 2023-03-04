@@ -4,4 +4,4 @@ written in *bash*!
 - it's aiming to be a simple non-bloated alternative
 to neofetch
 
-![demo](demo.png"demo")
+![demo](demo.png)
